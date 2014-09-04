@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    require 'zk_utils'
+    
+    z = ZkUtils.new("localhost:2181")
+    
+    z.ls("/", :r => true).each do | node |
+        p node
+    end
+    
+    z.delete("/test", :r => true)
+
 
 ## Contributing
 
