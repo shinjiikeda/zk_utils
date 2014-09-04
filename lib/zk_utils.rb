@@ -1,4 +1,5 @@
-require "zk_utils/version"
+
+require 'zk'
 
 class ZkUtils
   attr_reader :zk
